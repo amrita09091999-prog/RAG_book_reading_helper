@@ -7,6 +7,8 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 import faiss
 from langchain_community.docstore.in_memory import InMemoryDocstore
 from langchain_community.vectorstores import FAISS
+from langchain_community.retrievers import BM25Retriever
+from sentence_transformers import CrossEncoder
 import os
 
 class RAG:
@@ -15,6 +17,7 @@ class RAG:
             model_name = "sentence-transformers/all-MiniLM-L6-v2",
             encode_kwargs = {'normalize_embeddings':True}
         )
+        self.cross_encoder = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
         llm = HuggingFaceEndpoint(
             repo_id="Qwen/Qwen3-VL-8B-Instruct",
             task="text-generation",
@@ -72,6 +75,40 @@ class RAG:
         os.makedirs(self.vector_store,exist_ok = True)
         os.makedirs(os.path.join(self.vector_store,self.book_name),exist_ok = True)
         vector_store.save_local(os.path.join(self.vector_store,self.book_name,'faiss_index'))
+    
+    def retrieve(self, query):
+        with open(f"{self.chunks_dir}/{self.book_name}/chunks.pkl", "rb") as f:
+            chunks = pickle.load(f)
+        
+        vector_store = FAISS.load_local(
+        os.path.join(self.vector_store,self.book_name,'faiss_index'),
+        self.embedding_model,
+        allow_dangerous_deserialization=True
+        )
+
+        bm25_retriever = BM25Retriever.from_documents(
+        documents=chunks,  
+        k= 25)
+
+        semantic_retriever = vector_store.as_retriever(
+        search_type="mmr",
+        search_kwargs={"k":25}
+        )
+
+        bm25_docs = bm25_retriever.invoke(query)
+        faiss_docs = semantic_retriever.invoke(query)
+        
+        combined_docs = bm25_docs + faiss_docs
+        unique_docs_dict = {id(doc): doc for doc in combined_docs}
+        deduped_docs = list(unique_docs_dict.values())
+        pairs = [[query, doc.page_content] for doc in deduped_docs]
+        scores = self.cross_encoder.predict(pairs)
+        top_docs = [doc for _, doc in sorted(zip(scores, deduped_docs), key=lambda x: x[0], reverse=True)][:15]
+        return top_docs 
+    
+    
+
+
 
 
 
