@@ -88,11 +88,11 @@ class RAG:
 
         bm25_retriever = BM25Retriever.from_documents(
         documents=chunks,  
-        k= 25)
+        k= 10)
 
         semantic_retriever = vector_store.as_retriever(
         search_type="mmr",
-        search_kwargs={"k":25}
+        search_kwargs={"k":40}
         )
 
         bm25_docs = bm25_retriever.invoke(query)
@@ -103,8 +103,19 @@ class RAG:
         deduped_docs = list(unique_docs_dict.values())
         pairs = [[query, doc.page_content] for doc in deduped_docs]
         scores = self.cross_encoder.predict(pairs)
-        top_docs = [doc for _, doc in sorted(zip(scores, deduped_docs), key=lambda x: x[0], reverse=True)][:15]
+        top_docs = [doc for _, doc in sorted(zip(scores, deduped_docs), key=lambda x: x[0], reverse=True)][:20]
         return top_docs 
+    
+    def format_docs(self,top_docs):
+        doc_info = []
+        for i,doc in enumerate(top_docs, start=1):
+            string = f"""Document - {i}
+            Chapter Number - {doc.metadata['chapter_number']}
+            Chapter Name - {doc.metadata['chapter_name']}\n
+            Content - {doc.page_content}\n\n
+            Page Number - {doc.metadata['page']}"""
+        doc_info.append(string)
+        return "\n\n".join(doc_info)
     
     
 
