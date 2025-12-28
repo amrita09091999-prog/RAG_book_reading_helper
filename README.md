@@ -1,4 +1,4 @@
-📚 #**RAG Book Reading Assistant**
+📚 **RAG Book Reading Assistant**
 
 A Retrieval-Augmented Generation (RAG) system for question answering on novels, designed to help readers recall information as they read.
 
