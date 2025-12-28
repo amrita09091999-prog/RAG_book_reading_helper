@@ -4,6 +4,7 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_core.prompts import PromptTemplate
 import faiss
 from langchain_community.docstore.in_memory import InMemoryDocstore
 from langchain_community.vectorstores import FAISS
@@ -11,9 +12,11 @@ from langchain_community.retrievers import BM25Retriever
 from sentence_transformers import CrossEncoder
 import os
 import json
+from dotenv import load_dotenv
 
 class RAG:
     def __init__(self,book_name):
+        load_dotenv()
         self.embedding_model = HuggingFaceEmbeddings(
             model_name = "sentence-transformers/all-MiniLM-L6-v2",
             encode_kwargs = {'normalize_embeddings':True}
@@ -30,14 +33,19 @@ class RAG:
             task="text-generation",
             temperature = 0.1
             )
+        self.judge_model = ChatHuggingFace(llm=llm)
         self.chunks_dir = "/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/chunks_and_vectors/chunk_store"
         self.vector_store = "/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/chunks_and_vectors/vector_store"
         self.book_name = book_name
-        self.rag_response = {
+        os.makedirs("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",exist_ok =True)
+        rag_response = {
             'query':None,
             'retrieved_context':None,
             'response':None
         }
+        if not os.path.exists(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",'rag_response.json')):
+            with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",'rag_response.json'),'w') as f:
+                json.dump(rag_response,f)
     
     def chunk_novel(self,doc_pdf):
         loader = PyPDFLoader(f"/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/uploaded_pdf/{doc_pdf}")
@@ -110,6 +118,12 @@ class RAG:
         pairs = [[query, doc.page_content] for doc in deduped_docs]
         scores = self.cross_encoder.predict(pairs)
         top_docs = [doc for _, doc in sorted(zip(scores, deduped_docs), key=lambda x: x[0], reverse=True)][:20]
+    
+        with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",'rag_response.json'),'r') as f:
+            rag_response = json.load(f)
+        rag_response['query']= query
+        with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",'rag_response.json'),'w') as f:
+            json.dump(rag_response,f)
         return top_docs 
     
     def format_docs(self, top_docs):
@@ -128,11 +142,55 @@ class RAG:
 
         formatted_docs  = "\n\n---\n\n".join(doc_info)
 
-        os.makedirs("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",exist_ok =True)
-        self.rag_response['retrieved_context'] = formatted_docs
+        with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",'rag_response.json'),'r') as f:
+            rag_response = json.load(f)
 
-        with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",'rag_response.json()'),'w') as f:
-            json.dump(self.rag_response,f)
+        rag_response['retrieved_context'] = formatted_docs
+
+        with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",'rag_response.json'),'w') as f:
+            json.dump(rag_response,f)
+    
+    def create_prompt(self):
+        with open("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/prompts/rag_response_prompt_template.txt",'r',encoding="utf-8") as f:
+            prompt_template = f.read()
+
+        prompt = PromptTemplate(
+            template = prompt_template,
+            input_variables = ['context','query']
+        )
+
+        with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",'rag_response.json'),'r') as f:
+            rag_response = json.load(f)
+        
+        context = rag_response['retrieved_context']
+        query = rag_response['query']
+        if query is None:
+            query = "who is rand al thor?"
+
+        formatted_prompt = prompt.format(
+            context = context,
+            query = query
+        )
+        with open("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/prompts/rag_response_prompt.txt", "w", encoding="utf-8") as f:
+            f.write(formatted_prompt)
+    
+    def create_llm_response(self):
+        with open("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/prompts/rag_response_prompt.txt", "r", encoding="utf-8") as f:
+            input_prompt = f.read()
+        
+        with open("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle/rag_response.json",'r') as f:
+            rag_response = json.load(f)
+
+        response = self.generation_model.invoke(input_prompt)
+        rag_response['response'] = response.content
+
+        with open("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle/rag_response.json",'w') as f:
+            json.dump(rag_response,f)
+
+
+
+
+
         
 
     
