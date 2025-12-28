@@ -95,7 +95,7 @@ c) **Retrieval Relevance**
 
 ⚙️ **Backend**
 
-      Built using FastAPI, exposing the following endpoints:
+Built using FastAPI, exposing the following endpoints:
       Book Upload – Upload book PDFs for ingestion
       Question Answering – Submit queries and receive generated answers
       Evaluation – Returns structured evaluation feedback:
