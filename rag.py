@@ -10,6 +10,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.retrievers import BM25Retriever
 from sentence_transformers import CrossEncoder
 import os
+import json
 
 class RAG:
     def __init__(self,book_name):
@@ -32,6 +33,11 @@ class RAG:
         self.chunks_dir = "/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/chunks_and_vectors/chunk_store"
         self.vector_store = "/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/chunks_and_vectors/vector_store"
         self.book_name = book_name
+        self.rag_response = {
+            'query':None,
+            'retrieved_context':None,
+            'response':None
+        }
     
     def chunk_novel(self,doc_pdf):
         loader = PyPDFLoader(f"/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/uploaded_pdf/{doc_pdf}")
@@ -106,17 +112,31 @@ class RAG:
         top_docs = [doc for _, doc in sorted(zip(scores, deduped_docs), key=lambda x: x[0], reverse=True)][:20]
         return top_docs 
     
-    def format_docs(self,top_docs):
+    def format_docs(self, top_docs):
         doc_info = []
-        for i,doc in enumerate(top_docs, start=1):
-            string = f"""Document - {i}
-            Chapter Number - {doc.metadata['chapter_number']}
-            Chapter Name - {doc.metadata['chapter_name']}\n
-            Content - {doc.page_content}\n\n
-            Page Number - {doc.metadata['page']}"""
-        doc_info.append(string)
-        return "\n\n".join(doc_info)
+
+        for i, doc in enumerate(top_docs, start=1):
+            formatted_doc = (
+                f"Document {i}\n"
+                f"Chapter Number: {doc.metadata.get('chapter_number', 'N/A')}\n"
+                f"Chapter Name: {doc.metadata.get('chapter_name', 'N/A')}\n"
+                f"Page Number: {doc.metadata.get('page', 'N/A')}\n\n"
+                f"Content:\n{doc.page_content.strip()}"
+            )
+
+            doc_info.append(formatted_doc)
+
+        formatted_docs  = "\n\n---\n\n".join(doc_info)
+
+        os.makedirs("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",exist_ok =True)
+        self.rag_response['retrieved_context'] = formatted_docs
+
+        with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",'rag_response.json()'),'w') as f:
+            json.dump(self.rag_response,f)
+        
+
     
+
     
 
 
