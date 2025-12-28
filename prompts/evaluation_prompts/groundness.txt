@@ -30,4 +30,4 @@ RAG RESPONSE -
 
 CONTEXT - 
 
-[context]
+{context}

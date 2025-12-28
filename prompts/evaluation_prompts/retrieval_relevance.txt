@@ -28,6 +28,6 @@ QUERY -
 
 {query}
 
-RAG RESPONSE - 
+CONTEXT - 
 
-[rag_response]
+{context}
