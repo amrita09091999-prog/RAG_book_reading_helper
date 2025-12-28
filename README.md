@@ -79,6 +79,7 @@ LLM used for evaluation: Qwen 14B Instruct
 Prompts are crafted using rubric-based prompting, instructing the LLM to evaluate outputs based on predefined logic.
 
 **Evaluation Metrics**
+
 a) **Answer Relevance**
       Inputs: Question + retrieved context
       Judges whether the context is sufficient to answer the question
@@ -93,13 +94,15 @@ c) **Retrieval Relevance**
 
 
 ⚙️ **Backend**
+
       Built using FastAPI, exposing the following endpoints:
       Book Upload – Upload book PDFs for ingestion
       Question Answering – Submit queries and receive generated answers
       Evaluation – Returns structured evaluation feedback:
       Answer relevance, Faithfulness, Retrieval relevance
 
-🖥️ Frontend
+🖥️ **Frontend**
+
 Built using Streamlit
       Features
       Upload book PDFs
