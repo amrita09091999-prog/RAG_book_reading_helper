@@ -8,6 +8,7 @@ import pickle
 import pandas as pd
 import os
 from main import RAGOrchestration
+from process_evaluation import Process
 
 app = FastAPI()
 
@@ -18,6 +19,7 @@ os.makedirs(UPLOAD_DIR,exist_ok = True)
 
 class QuestionRequest(BaseModel):
     query : str
+    book_name:str
 
 @app.get("/")
 def intro():
@@ -26,7 +28,6 @@ def intro():
     }
 @app.post("/novel_upload")
 async def upload_file(file: UploadFile = File(...)):
-    global NOVEL_PATH
 
     if not file.filename.lower().endswith(".pdf"):
         raise HTTPException(status_code=400, detail="Only PDF files allowed")
@@ -39,16 +40,21 @@ async def upload_file(file: UploadFile = File(...)):
     if not os.path.exists(file_path):
         with open(file_path, "wb") as f:
             f.write(await file.read())
-
-        NOVEL_PATH = file_path
+        
+        database = pd.read_csv("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/Book_Database.csv",sep = ',')
+        book_name = file.filename.replace(".pdf","")
+        row = {
+            'Book Name':book_name,
+            'Location':file_path
+        }
+        database = pd.concat([database, pd.DataFrame([row])], ignore_index=True)
+        database.to_csv("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/Book_Database.csv",index=False)
 
         return {
             "filename": file.filename,
             "content_type": file.content_type,
-            "message": "File uploaded successfully"
+            "message": "File uploaded successfully and saved into Database "
         }
-
-    NOVEL_PATH = file_path
     return {
         "filename": file.filename,
         "content_type": file.content_type,
@@ -58,20 +64,31 @@ async def upload_file(file: UploadFile = File(...)):
 
 @app.post("/ask_questions")
 async def ask_questions(request:QuestionRequest):
-    global QUERY
-    if not NOVEL_PATH:
+    query = request.query
+    book_name = request.book_name
+    database = pd.read_csv("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/Book_Database.csv",sep = ',')
+    process = Process()
+    k = 0
+    location_value = None
+
+    for idx, row in database.iterrows():
+        if process.book_name_is_match(row['Book Name'], book_name):
+            k = 1
+            print("book found in the database")
+            location_value = row['Location']
+            break
+    if k==0:
         raise HTTPException(
             status = 400,
             detail = "Please first upload the novel - use /upload_file endpoint"
         )
     else:
         input_json = {
-            'doc_pdf':NOVEL_PATH,
+            'doc_pdf':location_value,
             'query':request.query
         }
-        QUERY = request.query
-        rag_orchestra = RAGOrchestration(input_json)
-        rag_orchestra.get_llm_response()
+        rag_orchestra = RAGOrchestration()
+        rag_orchestra.get_llm_response(input_json)
 
         with open("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle/rag_response.json",'r') as f:
             llm_response = json.load(f)
@@ -87,13 +104,9 @@ async def evaluate():
     if not os.path.exists("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle/rag_response.json"):
         raise HTTPException(
             status_code=400,
-            detail="No query or novel found for evaluation"
+            detail="No response found for evaluation"
         )
-    input_json = {
-            'doc_pdf':NOVEL_PATH,
-            'query':QUERY
-        }
-    rag_orchestra = RAGOrchestration(input_json)
+    rag_orchestra = RAGOrchestration()
     rag_orchestra.create_evaluation()
     with open ("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle/evaluation/evaluation.json",'r') as f:
         evaluated_doc = json.load(f)

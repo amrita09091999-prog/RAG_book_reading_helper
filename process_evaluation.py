@@ -1,4 +1,5 @@
 import json
+import re
 
 class Process:
     def normalize_text(self,text):
@@ -54,3 +55,22 @@ class Process:
                 "Retrieval Relevance": self.extract_metric_block(raw_text, "Retrieval Relevance"),
             }
         }
+    
+    def book_search_normalise(self,text):
+        text = text.lower()  # lowercase
+        text = re.sub(r'[^a-z0-9\s]', '', text)  # remove punctuation
+        text = re.sub(r'\s+', ' ', text)  # remove extra spaces
+        return text.strip()
+    
+    def book_name_is_match(self,title, user_input, threshold=0.6):
+        title_norm = self.book_search_normalise(title)
+        user_norm = self.book_search_normalise(user_input)
+        
+        title_words = set(title_norm.split())
+        user_words = set(user_norm.split())
+        
+        # count matches
+        matches = title_words.intersection(user_words)
+        score = len(matches) / len(user_words)
+        
+        return score >= threshold
