@@ -95,8 +95,8 @@ async def evaluate():
         }
     rag_orchestra = RAGOrchestration(input_json)
     rag_orchestra.create_evaluation()
-    with open ("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle/evaluation/evaluation.txt",'r') as f:
-        evaluated_doc = f.read()
+    with open ("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle/evaluation/evaluation.json",'r') as f:
+        evaluated_doc = json.load(f)
     return JSONResponse(
         status_code= 200,
         content = {

@@ -3,7 +3,7 @@ import os
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from langchain_core.prompts import PromptTemplate
 from dotenv import load_dotenv
-
+from process_evaluation import Process
 load_dotenv()
 
 class Evaluate:
@@ -90,6 +90,7 @@ class Evaluate:
         {retrieval_relevence_response.content}"""
 
         os.makedirs("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle/evaluation",exist_ok = True)
+        evaluation_json = Process().llm_output_to_json(text)
 
-        with open("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle/evaluation/evaluation.txt",'w') as f:
-            f.write(text)
+        with open("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle/evaluation/evaluation.json",'w') as f:
+            json.dump(evaluation_json,f)
