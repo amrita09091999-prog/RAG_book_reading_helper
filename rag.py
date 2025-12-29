@@ -34,17 +34,17 @@ class RAG:
             temperature = 0.1
             )
         self.judge_model = ChatHuggingFace(llm=llm)
-        self.chunks_dir = "/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/chunks_and_vectors/chunk_store"
-        self.vector_store = "/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/chunks_and_vectors/vector_store"
+        self.chunks_dir = "/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/chunks_and_vectors/chunk_store"
+        self.vector_store = "/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/chunks_and_vectors/vector_store"
         self.book_name = book_name
-        os.makedirs("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",exist_ok =True)
+        os.makedirs("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle",exist_ok =True)
         rag_response = {
             'query':None,
             'retrieved_context':None,
             'response':None
         }
-        if not os.path.exists(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",'rag_response.json')):
-            with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",'rag_response.json'),'w') as f:
+        if not os.path.exists(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle",'rag_response.json')):
+            with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle",'rag_response.json'),'w') as f:
                 json.dump(rag_response,f)
     
     def chunk_novel(self,doc_pdf):
@@ -119,10 +119,10 @@ class RAG:
         scores = self.cross_encoder.predict(pairs)
         top_docs = [doc for _, doc in sorted(zip(scores, deduped_docs), key=lambda x: x[0], reverse=True)][:20]
     
-        with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",'rag_response.json'),'r') as f:
+        with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle",'rag_response.json'),'r') as f:
             rag_response = json.load(f)
         rag_response['query']= query
-        with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",'rag_response.json'),'w') as f:
+        with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle",'rag_response.json'),'w') as f:
             json.dump(rag_response,f)
         return top_docs 
     
@@ -142,16 +142,16 @@ class RAG:
 
         formatted_docs  = "\n\n---\n\n".join(doc_info)
 
-        with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",'rag_response.json'),'r') as f:
+        with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle",'rag_response.json'),'r') as f:
             rag_response = json.load(f)
 
         rag_response['retrieved_context'] = formatted_docs
 
-        with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",'rag_response.json'),'w') as f:
+        with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle",'rag_response.json'),'w') as f:
             json.dump(rag_response,f)
     
     def create_prompt(self):
-        with open("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/prompts/rag_response_prompt_template.txt",'r',encoding="utf-8") as f:
+        with open("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/prompts/rag_response_prompt_template.txt",'r',encoding="utf-8") as f:
             prompt_template = f.read()
 
         prompt = PromptTemplate(
@@ -159,7 +159,7 @@ class RAG:
             input_variables = ['context','query']
         )
 
-        with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle",'rag_response.json'),'r') as f:
+        with open(os.path.join("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle",'rag_response.json'),'r') as f:
             rag_response = json.load(f)
         
         context = rag_response['retrieved_context']
@@ -171,20 +171,20 @@ class RAG:
             context = context,
             query = query
         )
-        with open("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/prompts/rag_response_prompt.txt", "w", encoding="utf-8") as f:
+        with open("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/prompts/rag_response_prompt.txt", "w", encoding="utf-8") as f:
             f.write(formatted_prompt)
     
     def create_llm_response(self):
-        with open("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/prompts/rag_response_prompt.txt", "r", encoding="utf-8") as f:
+        with open("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/prompts/rag_response_prompt.txt", "r", encoding="utf-8") as f:
             input_prompt = f.read()
         
-        with open("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle/rag_response.json",'r') as f:
+        with open("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle/rag_response.json",'r') as f:
             rag_response = json.load(f)
 
         response = self.generation_model.invoke(input_prompt)
         rag_response['response'] = response.content
 
-        with open("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/rag_response_bundle/rag_response.json",'w') as f:
+        with open("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle/rag_response.json",'w') as f:
             json.dump(rag_response,f)
 
 

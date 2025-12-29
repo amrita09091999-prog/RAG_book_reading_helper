@@ -9,7 +9,7 @@ class RAGOrchestration:
         self.query = input_json['query']
         filename = Path(self.doc_pdf).name.replace(".pdf","")
         self.bookname = filename   
-        self.rag = RAG()
+        self.rag = RAG(self.bookname)
     def get_llm_response(self):
         try:
 
@@ -22,10 +22,12 @@ class RAGOrchestration:
                 print("Empty vector store inititalised\n")
                 self.rag.add_documents_in_vector_store(vector_store)
                 print("Documents added into vector store\n")
+            else:
+                print("documents already uploaded and chunked, skipping this stage\n")
 
             print("proceeding for retrieval stage...\n")
             top_docs = self.rag.retrieve(self.query)
-            format_docs(top_docs)
+            self.rag.format_docs(top_docs)
             print("Relevant documents retrieved\n")
             self.rag.create_prompt()
             print("Prompts created\n")
@@ -38,15 +40,22 @@ class RAGOrchestration:
     def create_evaluation(self):
         try:
             vector_store_path = Path("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/chunks_and_vectors/vector_store")
-                if not (vector_store_path/self.bookname).is_dir():
-                    print("No RAG response to evaluate , please run get_llm_response first")
-                else:
-                    self.evaluate = Evaluate()
-                    print("RAG evalaution done and saved in - /Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle/evaluation/evaluation.txt")
+            if not (vector_store_path/self.bookname).is_dir():
+                print("No RAG response to evaluate , please run get_llm_response first")
+            else:
+                self.evaluate = Evaluate()
+                print("RAG evalaution done and saved in - /Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle/evaluation/evaluation.txt")
         except Exception as e:
             print(f"Error in pipeline - {e}")
             traceback.print_exc()
 
+input_json = {
+    'doc_pdf':'/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/uploaded_pdf/Wheel Of Time - 1The Eye Of The World - PDF Room.pdf',
+    'query':'Summarise chapter 10 and explain how is chapter 10 related to chapter 9'
+}
 
+orchestra = RAGOrchestration(input_json)
+#orchestra.get_llm_response()
+orchestra.create_evaluation()
 
         

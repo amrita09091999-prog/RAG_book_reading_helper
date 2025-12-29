@@ -10,514 +10,730 @@ Follow the guidelines strictly -
 5. Keep the answer length to 100-200 words only 
 6. Do not hallucinate
 
-Provided inputs - 
+Provided inputs -
 
 CONTEXT - 
 
 Document 1
-Chapter Number: 3
-Chapter Name: The Peddler
-Page Number: 70
+Chapter Number: 10
+Chapter Name: Leavetaking
+Page Number: 177
 
 Content:
-oﬀ leading strings. People do ride horses, you know. That
-doesn’t make them monsters out of a gleeman’s tale.” Rand
-nodded to himself; it was just as he had thought. She
-rounded on him. “And you’ve been spreading these tales.
-Sometimes you have no sense, Rand al’Thor. The winter has
-been frightening enough without you going about scaring
-the children.”
-Rand gave a sour grimace. “I haven’t spread anything,
-Egwene. But I saw what I saw, and it was no farmer out
+CHAPTER
+10
+Leavetaking
+A single lantern, its shutters half closed, hung from a
+nail on a stall post, casting a dim light. Deep shadows
+swallowed most of the stalls. As Rand came through the
+doors from the stableyard, hard on the heels of Mat and the
+Warder, Perrin leaped up in a rustle of straw from where he
+had been sitting with his back against a stall door. A heavy
+cloak swathed him.
+Lan barely paused to demand, “Did you look the way I
+told you, blacksmith?”
+“I looked,” Perrin replied. “There’s nobody here but us.
+Why would anybody hide—”
+“Care and a long life go together, blacksmith.” The
+Warder ran a quick eye around the shadowed stable and the
+deeper shadows of the hayloft above, then shook his head.
+“No time,” he muttered, half to himself. “Hurry, she says.”
+As if to suit his words, he strode quickly to where the
+ﬁve horses stood tethered, bridled and saddled at the back
+of the pool of light. Two were the black stallion and white
+mare that Rand had seen before. The others, if not quite so
+tall or so sleek, certainly appeared to be among the best the
+Two Rivers had to oﬀer. With hasty care Lan began
+examining cinches and girth straps, and the leather ties that
+held saddlebags, water-skins, and blanketrolls behind the
+saddles.
 
 ---
 
 Document 2
-Chapter Number: 36
-Chapter Name: Web of the Pattern
-Page Number: 654
+Chapter Number: 9
+Chapter Name: Tellings of the Wheel
+Page Number: 157
 
 Content:
-would have done credit to a bull. “Too long, too long, and so
-few to travel and see, it might as well have been none.”
-Rand sat there for a minute with his mouth hanging
-open, staring up at the apparition in wide-toed, knee-high
-boots and a dark blue coat that buttoned from the neck to
-the waist, then ﬂared out to his boot tops like a kilt over
-baggy trousers. In one hand was a book, seeming tiny by
-comparison, with a ﬁnger broad enough for three marking
-the place.
-“I thought you were—” he began, then caught himself.
-“What are—?” That was not any better. Getting to his feet,
-he gingerly oﬀered his hand. “My name is Rand al’Thor.”
+CHAPTER
+9
+Tellings of the Wheel
+Rand’s heart pounded as he ran, and he stared in
+dismay at the barren hills surrounding him. This was not just
+a place where spring was late in coming; spring had never
+come here, and never would come. Nothing grew in the cold
+soil that crunched under his boots, not so much as a bit of
+lichen. He scrambled past boulders, twice as tall as he was;
+dust coated the stone as if never a drop of rain had touched
+it. The sun was a swollen, blood-red ball, more ﬁery than on
+the hottest day of summer and bright enough to sear his
+eyes, but it stood stark against a leaden cauldron of a sky
+where clouds of sharp black and silver roiled and boiled on
+every horizon. For all the swirling clouds, though, no breath
+of breeze stirred across the land, and despite the sullen sun
+the air burned cold like the depths of winter.
+Rand looked over his shoulder often as he ran, but he
+could not see his pursuers. Only desolate hills and jagged
+black mountains, many topped by tall plumes of dark smoke
+rising to join the milling clouds. If he could not see his
+hunters, though, he could hear them, howling behind him,
+guttural voices shouting with the glee of the chase, howling
+with the joy of blood to come. Trollocs. Coming closer, and
+his strength was almost gone.
+With desperate haste he scrambled to the top of a knife-
+edged ridge, then dropped to his knees with a groan. Below
 
 ---
 
 Document 3
-Chapter Number: 52
-Chapter Name: There Is Neither Beginning Nor End
-Page Number: 910
+Chapter Number: 51
+Chapter Name: Against the Shadow
+Page Number: 892
 
 Content:
-Lan knew, but on the surface at least, nothing had changed.
-He thought that perhaps, for Lan, nothing had changed
-inside either.
-“I must say,” Loial said, setting the chest down, “that
-traveling with ta’veren has turned out to be even more
-interesting than I expected.” His ears twitched violently. “If
-it becomes any more interesting, I will go back to Stedding
-Shangtai immediately, confess everything to Elder Haman,
-and never leave my books again.” Suddenly the Ogier
-grinned, that wide mouth splitting his face in two. “It is so
-good to see you, Rand al’Thor. The Warder is the only one of
-these three who cares much at all for books, and he won’t
+CHAPTER
+51
+Against the Shadow
+The land tended upward the way Rand went, but fear
+lent his legs strength and they ate ground in long strides,
+tearing his way through ﬂowering bushes and tangles of
+wildrose, scattering petals, not caring if thorns ripped his
+clothes or even his ﬂesh. Moiraine had stopped screaming. It
+seemed as if the shrieks had gone on forever, each one
+more throat-wrenching than the last, but he knew they had
+lasted only moments altogether. Moments before Aginor
+would be on his trail. He knew it would be him that Aginor
+followed. He had seen the certainty in the Forsaken’s hollow
+eyes, in that last second before terror whipped his feet to
+run.
+The land grew ever steeper, but he scrambled on,
+pulling himself forward by handfuls of undergrowth, rocks
+and dirt and leaves spilling down the slope from under his
+feet, ﬁnally crawling on hands and knees when the slant
+became too great. Ahead, above, it leveled out a little.
+Panting, he scrabbled his way the last few spans, got to his
+feet, and stopped, wanting to howl aloud.
+Ten paces in front of him, the hilltop dropped away
+sharply. He knew what he would see before he reached it,
+but he took the steps anyway, each heavier than the one
+before, hoping there might be some track, a goat path,
 
 ---
 
 Document 4
-Chapter Number: 26
-Chapter Name: Whitebridge
-Page Number: 456
+Chapter Number: 53
+Chapter Name: The Wheel Turns
+Page Number: 915
 
 Content:
-could not manage to get it all into words. They had to
-believe the others were alive. They had to. Why? nagged a
-voice in the back of his head. So it will all turn out like one of
-Thom’s stories? The heroes ﬁnd the treasure and defeat the
-villain and live happily ever after? Some of his stories don’t
-end that way. Sometimes even heroes die. Are you a hero,
-Rand al’Thor? Are you a hero, sheepherder?
-Abruptly Mat ﬂushed and pulled his eyes away. Freed
-from his thoughts, Rand jumped up to move through the
-hurly-burly to the rail. Mat came after him slowly, not even
-making an eﬀort to dodge the sailors who ran across his
-path.
+CHAPTER
+53
+The Wheel Turns
+Dawn revealed devastation in the Green Man’s garden.
+The ground was thick with fallen leaves, almost knee-deep
+in places. All the ﬂowers were gone except a few clinging
+desperately to the edge of the clearing. Little could grow in
+the soil under an oak, but a thin circle of ﬂowers and grass
+centered on the thick trunk above the Green Man’s grave.
+The oak itself retained only half its leaves, and that was far
+more than any other tree had, as if some remnant of the
+Green Man still fought to hold there. The cool breezes had
+died, replaced by a growing sticky heat, the butterﬂies were
+gone, the birds silent. It was a silent group who prepared to
+leave.
+Rand climbed into the bay’s saddle with a sense of loss.
+It shouldn’t be this way. Blood and ashes, we won!
+“I wish he had found his other place,” Egwene said as
+she mounted Bela. A litter, fashioned by Lan, was slung
+between the shaggy mare and Aldieb, to carry Moiraine;
+Nynaeve would ride beside with the white mare’s reins. The
+Wisdom dropped her eyes whenever she saw Lan glance at
+her, avoiding his gaze; the Warder looked at her whenever
+her eyes were averted, but he would not speak to her. No
+one had to ask who Egwene meant.
+“It is not right,” Loial said, staring at the oak. The Ogier
+was the only one still not mounted. “It is not right that
 
 ---
 
 Document 5
-Chapter Number: 40
-Chapter Name: The Web Tightens
-Page Number: 733
+Chapter Number: 3
+Chapter Name: The Peddler
+Page Number: 55
 
 Content:
-bandaging his head. “For everything. Custom in the Two
-Rivers is for a guest to bring a small gift. I’m afraid I have
-nothing. Although,” he added dryly, “apparently I did teach
-you something of the Two Rivers folk.”
-“If I had told Mother I think you are handsome, she
-certainly would have had you locked in a cell.” Elayne
-favored him with a dazzling smile. “Fare you well, Rand
-al’Thor.”
-Gaping, he watched her go, a younger version of
-Morgase’s beauty and majesty.
+CHAPTER
+3
+The Peddler
+Clusters of pots clattered and banged as the peddler’s
+wagon rumbled over the heavy timbers of the Wagon
+Bridge. Still surrounded by a cloud of villagers and farmers
+come for Festival, the peddler reined his horses to a stop in
+front of the inn. From every direction people streamed to
+swell the numbers around the great wagon, its wheels taller
+than any of the people with their eyes fastened to the
+peddler above them on the wagon seat.
+The man on the wagon was Padan Fain, a pale, skinny
+fellow with gangly arms and a massive beak of a nose. Fain,
+always smiling and laughing as if he knew a joke that no one
+else knew, had driven his wagon and team into Emond’s
+Field every spring for as long as Rand could remember.
+The door of the inn ﬂew open even as the team halted
+in a jangle of harness, and the Village Council appeared, led
+by Master al’Vere and Tam. They marched out deliberately,
+even Cenn Buie, amid all the excited shouting of the others
+for pins or lace or books or a dozen other things. Reluctantly
+the crowd parted to let them to the fore, everyone closing in
+quickly behind and never stopping their calling to the
+peddler. Most of all, the villagers called for news.
+In the eyes of the villagers, needles and tea and the like
+were no more than half the freight in a peddler’s wagon.
+Every bit as important was word of outside, news of the
 
 ---
 
 Document 6
-Chapter Number: 51
-Chapter Name: Against the Shadow
-Page Number: 900
+Chapter Number: 48
+Chapter Name: The Blight
+Page Number: 852
 
 Content:
-smile. His mother’s smile. “No! My mother is dead, and the
-other two are safe away from here. I deny you!” Egwene
-and Nynaeve blurred, became wafting mist, dissipated. Kari
-al’Thor still stood there, her eyes big with fear.
-“She, at least,” Ba’alzamon said, “is mine to do with as I
-will.”
-Rand shook his head. “I deny you.” He had to force the
-words out. “She is dead, and safe from you in the Light.”
-His mother’s lips trembled. Tears trickled down her
-cheeks; each one burned him like acid. “The Lord of the
-Grave is stronger than he once was, my son,” she said. “His
+CHAPTER
+48
+The Blight
+The wind whipped Lan’s cloak, sometimes making him
+hard to see even in the sunlight, and Ingtar and the hundred
+lances Lord Agelmar had sent to escort them to the Border,
+in case they met a Trolloc raid, made a brave display in
+double column with their armor and their red pennants and
+their steel-clad horses led by Ingtar’s Gray Owl banner. They
+were easily as grand as a hundred of the Queen’s Guards,
+but it was the towers just in sight ahead of them that Rand
+studied. He had had all morning to watch the Shienaran
+lances.
+Each tower stood tall and solid atop a hill, half a mile
+from its neighbor. East and west others rose, and more
+beyond those. A broad, walled ramp spiraled around each
+stone shaft, winding all the way around by the time it
+reached the heavy gates halfway to the crenellated top. A
+sortie from the garrison would be protected by the wall until
+it reached the ground, but enemies striving to reach the
+gate would climb under a hail of arrows and stones and hot
+oil from the big kettles poised on the outward ﬂaring
+ramparts above. A large steel mirror, carefully turned down,
+away from the sun, now, glittered atop each tower below
+the high iron cup where signal ﬁres could be lit when the
+sun did not shine. The signal would be ﬂashed, to towers
+further from the Border, and by those to still others, and so
 
 ---
 
 Document 7
-Chapter Number: 40
-Chapter Name: The Web Tightens
-Page Number: 734
+Chapter Number: 5
+Chapter Name: Winternight
+Page Number: 90
 
 Content:
-“Do not try to bandy words with her.” Gawyn laughed.
-“She will win every time.”
-Rand nodded absently. Handsome? Light, the Daughter-
-Heir to the throne of Andor! He gave himself a shake to
-clear his head.
-Gawyn seemed to be waiting for something. Rand
-looked at him for a moment.
-“My Lord, when I told you I was from the Two Rivers you
-were surprised. And everybody else, your mother, Lord
-Gareth, Elaida Sedai”—a shiver ran down his back—“none of
-them. . . .” He could not ﬁnish it; he was not even sure why
-he started. I am Tam al’Thor’s son, even if I was not born in
-the Two Rivers.
-Gawyn nodded as if it was for this he had been waiting.
-Still he hesitated. Rand opened his mouth to take back the
-unspoken question, and Gawyn said, “Wrap a shoufa around
-your head, Rand, and you would be the image of an
-Aielman. Odd, since Mother seems to think you sound like a
-Two Rivers man, at least. I wish we could have come to
-know one another, Rand al’Thor. Fare you well.”
-An Aielman.
-Rand stood watching Gawyn’s retreating back until an
-impatient cough from Tallanvor reminded him where he was.
-He ducked through the sallyport, barely clearing his heels
-before Tallanvor slammed it behind him. The bars inside
-were jammed into place loudly.
-The oval plaza in front of the Palace was empty, now. All
-the soldiers gone, all the crowds, trumpets, and drums
-vanished in silence. Nothing left but a scattering of litter
-blowing across the pavement and a few people hurrying
+CHAPTER
+5
+Winternight
+The sun stood halfway down from its noonday high by
+the time the cart reached the farmhouse. It was not a big
+house, not nearly so large as some of the sprawling
+farmhouses to the east, dwellings that had grown over the
+years to hold entire families. In the Two Rivers that often
+included three or four generations under one roof, including
+aunts, uncles, cousins, and nephews. Tam and Rand were
+considered out of the ordinary as much for being two men
+living alone as for farming in the Westwood.
+Here most of the rooms were on one ﬂoor, a neat
+rectangle with no wings or additions. Two bedrooms and an
+attic storeroom ﬁtted up under the steeply sloped thatch. If
+the whitewash was all but gone from the stout wooden walls
+after the winter storms, the house was still in a tidy state of
+repair, the thatch tightly mended and the doors and
+shutters well-hung and snug-ﬁtting.
+House, barn, and stone sheep pen formed the points of
+a triangle around the farmyard, where a few chickens had
+ventured out to scratch at the cold ground. An open
+shearing shed and a stone dipping trough stood next to the
+sheep pen. Hard by the ﬁelds between the farmyard and the
+trees loomed the tall cone of a tight-walled curing shed. Few
+farmers in the Two Rivers could make do without both wool
+and tabac to sell when the merchants came.
 
 ---
 
 Document 8
-Chapter Number: 33
-Chapter Name: The Dark Waits
-Page Number: 591
+Chapter Number: 49
+Chapter Name: The Dark One Stirs
+Page Number: 866
 
 Content:
-Rand looked at Gode just in time to see the man’s body
-crumble to dust. For an instant the burned face held a look
-of sublime joy that turned to horror in the ﬁnal moment, as
-if he had seen something waiting he did not expect. Gode’s
-empty velvet garments settled on the chair and the ﬂoor
-among the ash.
-When he turned back, Ba’alzamon’s outstretched hand
-had become a ﬁst. “You are mine, youngling, alive or dead.
-The Eye of the World will never serve you. I mark you as
-mine.” His ﬁst opened, and a ball of ﬂame shot out. It struck
-Rand in the face, exploding, searing.
-Rand lurched awake in the dark, water dripping through
-the cloaks onto his face. His hand trembled as he touched
-his cheeks. The skin felt tender, as if sunburned.
-Suddenly he realized Mat was twisting and moaning in
-his sleep. He shook him, and Mat came awake with a
-whimper.
-“My eyes! Oh, Light, my eyes! He took my eyes!”
-Rand held him close, cradling him against his chest as if
-he were a baby. “You’re all right, Mat. You’re all right. He
-can’t hurt us. We won’t let him.” He could feel Mat shaking,
-sobbing into his coat. “He can’t hurt us,” he whispered, and
-wished he believed it. What protects you makes you
-vulnerable. I am going mad.
-Just before ﬁrst light the downpour dwindled, the last
-drizzle fading as dawn came. The clouds remained,
-threatening until well into the morning. The wind came up,
-then, driving the clouds oﬀ to the south, baring a
-warmthless sun and slicing through their dripping wet
+CHAPTER
+49
+The Dark One Stirs
+Dawn woke Rand with a start, the sullen sun pricking
+his eyelids as it peeked reluctantly over the treetops of the
+Blight. Even so early, heat covered the spoiled lands in a
+heavy blanket. He lay on his back with his head pillowed on
+his blanketroll, staring at the sky. It was still blue, the sky.
+Even here, that, at least, was untouched.
+He was surprised to realize that he had slept. For a
+minute the dim memory of a conversation overheard
+seemed like part of some dream. Then he saw Nynaeve’s
+red-rimmed eyes; she had not slept, obviously. Lan’s face
+was harder than ever, as if he had resumed a mask and did
+not intend to let it slip again.
+Egwene went over and crouched beside the Wisdom,
+her face concerned. He could not make out what they said.
+Egwene spoke, and Nynaeve shook her head. Egwene said
+something else, and the Wisdom waved her away
+dismissively. Instead of going, Egwene bent her head closer,
+and for a few minutes the two women talked even more
+softly, with Nynaeve still shaking her head. The Wisdom
+ended it with a laugh, hugging Egwene and, by her
+expression, making soothing talk. When Egwene stood,
+though, she glared at the Warder. Lan did not seem to
+notice; he did not look in Nynaeve’s direction at all.
 
 ---
 
 Document 9
-Chapter Number: 51
-Chapter Name: Against the Shadow
-Page Number: 897
+Chapter Number: 2
+Chapter Name: Strangers
+Page Number: 39
 
 Content:
-The wind died. The screams died. The earth was still.
-Dust and smoke swirled back down the pass to surround
-him.
-“The Light blind you, Ba’alzamon! This has to end!”
-IT IS NOT HERE.
-It was not Rand’s thought, making his skull vibrate.
-I WILL TAKE NO PART. ONLY THE CHOSEN ONE CAN DO
-WHAT MUST BE DONE, IF HE WILL.
-“Where?” He did not want to say it, but he could not
-stop himself. “Where?”
-The haze surrounding him parted, leaving a dome of
-clear, clean air ten spans high, walled by billowing smoke
-and dust. Steps rose before him, each standing alone and
-unsupported, stretching up into the murk that obscured the
-sun.
-NOT HERE.
-Through the mist, as from the far end of the earth, came
-a cry. “The Light wills it!” The ground rumbled with the
-thunder of hooves as the forces of humankind launched
-their last charge.
-Within the void, his mind knew a moment of panic. The
-charging horsemen could not see him in the dust; their
-charge would trample right over him. The greater part of
-him ignored the shaking ground as a petty thing beneath
-concern. Dull anger driving his feet, he mounted the ﬁrst
-steps. It has to be ended!
-Darkness surrounded him, the utter blackness of total
-nothing. The steps were still there, hanging in the black,
-under his feet and ahead. When he looked back, those
-behind were gone, faded away to nothing, into the
-nothingness around him. But the cord was yet there,
-stretching behind him, the glowing line dwindling and
+CHAPTER
+2
+Strangers
+When Rand and Mat carried the ﬁrst barrels through
+the common room, Master al’Vere was already ﬁlling a pair
+of mugs with his best brown ale, his own make, from one of
+the casks racked against one wall. Scratch, the inn’s yellow
+cat, crouched atop it with his eyes closed and his tail
+wrapped around his feet. Tam stood in front of the big
+ﬁreplace of river rock, thumbing a long-stemmed pipe full of
+tabac from a polished canister the innkeeper always kept on
+the plain stone mantel. The ﬁreplace stretched half the
+length of the big, square room, with a lintel as high as a
+man’s shoulder, and the crackling blaze on the hearth
+vanquished the chill outside.
+At that time of the busy day before Festival, Rand
+expected to ﬁnd the common room empty except for Bran
+and his father and the cat, but four more members of the
+Village Council, including Cenn, sat in high-backed chairs in
+front of the ﬁre, mugs in hand and blue-gray pipesmoke
+wreathing their heads. For once none of the stones boards
+were in use, and all of Bran’s books stood idle on the shelf
+opposite the ﬁreplace. The men did not even talk, peering
+silently into their ale or tapping pipestems against their
+teeth in impatience, as they waited for Tam and Bran to join
+them.
+Worry was not uncommon for the Village Council these
+days, not in Emond’s Field, and likely not in Watch Hill, or
 
 ---
 
 Document 10
-Chapter Number: 4
-Chapter Name: The Gleeman
-Page Number: 84
+Chapter Number: 36
+Chapter Name: Web of the Pattern
+Page Number: 648
 
 Content:
-“We’ll tell Master al’Vere when we volunteer for the
-patrols,” Mat said, “he’ll tell the Council, and they’ll tell the
-watch.”
-“The Council!” Perrin said incredulously. “We’d be lucky
-if the Mayor didn’t laugh out loud. Master Luhhan and
-Rand’s father already think the two of us are jumping at
-shadows.”
-Rand sighed. “If we’re going to do it, we might as well
-do it now. He won’t laugh any louder today than he will
-tomorrow.”
+CHAPTER
+36
+Web of the Pattern
+Master Gill took them to a corner table in the common
+room and had one of the serving maids bring them food.
+Rand shook his head when he saw the plates, with a few
+thin slices of gravy-covered beef, a spoonful of mustard
+greens, and two potatoes on each. It was a rueful, resigned
+headshake, though, not angry. Not enough of anything, the
+innkeeper had said. Picking up his knife and fork, Rand
+wondered what would happen when there was nothing left.
+It made his half-covered plate seem like a feast. It made him
+shiver.
+Master Gill had chosen a table well away from anyone
+else, and he sat with his back to the corner, where he could
+watch the room. Nobody could get close enough to overhear
+what they said without him seeing. When the maid left, he
+said softly, “Now, why don’t you tell me about this trouble of
+yours? If I’m going to help, I’d best know what I’m getting
+into.”
+Rand looked at Mat, but Mat was frowning at his plate as
+if he were mad at the potato he was cutting. Rand took a
+deep breath. “I don’t really understand it myself,” he began.
+He kept the story simple, and he kept Trollocs and Fades
+out of it. When somebody oﬀered help, it would not do to
+tell them it was all about fables. But he did not think it was
+fair to understate the danger, either, not fair to pull
+someone in when they had no idea what they were getting
 
 ---
 
 Document 11
-Chapter Number: 15
-Chapter Name: Strangers and Friends
-Page Number: 276
+Chapter Number: 34
+Chapter Name: The Last Village
+Page Number: 614
 
 Content:
-sniﬀed dismissively. “He is too young. You are not from this
-place, yes?” he said coldly to Rand. “You come from where?”
-“I just arrived in Baerlon.” A tingling thrill ran along
-Rand’s arms and legs. He felt ﬂushed, almost warm. “You
-wouldn’t know of a good inn, would you?”
-“You avoid my questions,” Bornhald snapped. “What evil
-is in you that you do not answer me?” His companions
-moved up to either side of him, faces hard and
-expressionless. Despite the mudstains on their cloaks, there
-was nothing funny about them now.
+CHAPTER
+34
+The Last Village
+It was after dark when they reached Carysford, longer
+than Rand had thought it would take from what Master
+Kinch said when he let them down. He wondered if his whole
+sense of time was getting skewed. Only three nights since
+Howal Gode and Four Kings, two since Paitr had surprised
+them in Market Sheran. Just a bare day since the nameless
+Darkfriend woman tried to kill them in the stable of The
+Queen’s Man, but even that seemed a year ago, or a
+lifetime.
+Whatever was happening to time, Carysford appeared
+normal enough, on the surface, at least. Neat, vine-covered
+brick houses and narrow lanes, except for the Caemlyn Road
+itself, quiet and outwardly peaceful. But what’s underneath?
+he wondered. Market Sheran had been peaceful to look at,
+and so had the village where the woman. . . . He had never
+learned the name of that one, and he did not want to think
+about it.
+Light spilled from the windows of the houses into streets
+all but empty of people. That suited Rand. Slinking from
+corner to corner, he avoided the few people abroad. Mat
+stuck to his shoulder, freezing when the crunch of gravel
+announced the approach of a villager, dodging from shadow
+to shadow when the dim shape had gone past.
+The River Cary was a bare thirty paces wide there, and
+the black water moved sluggishly, but the ford had long
 
 ---
 
 Document 12
 Chapter Number: 9
 Chapter Name: Tellings of the Wheel
-Page Number: 171
+Page Number: 174
 
 Content:
-so lovely to behold that Ogier stonemasons came to stare in
-wonder. Farms and villages covered this region, and that
-you call the Forest of Shadows, as well, and beyond. But all
-of those folk thought of themselves as the people of the
-Mountain Home, the people of Manetheren.
-“Their King was Aemon al Caar al Thorin, Aemon son of
-Caar son of Thorin, and Eldrene ay Ellan ay Carlan was his
-Queen. Aemon, a man so fearless that the greatest
-compliment for courage any could give, even among his
-enemies, was to say a man had Aemon’s heart. Eldrene, so
-beautiful that it was said the ﬂowers bloomed to make her
-smile. Bravery and beauty and wisdom and a love that
+their people to escape. From the city of Manetheren, Eldrene
+organized the ﬂight of her people into the deepest forests
+and the fastness of the mountains.
+“But some did not ﬂee. First in a trickle, then a river,
+then a ﬂood, men went, not to safety, but to join the army
+ﬁghting for their land. Shepherds with bows, and farmers
+with pitchforks, and woodsmen with axes. Women went, too,
+shouldering what weapons they could ﬁnd and marching
+side by side with their men. No one made that journey who
+did not know they would never return. But it was their land.
+It had been their fathers’, and it would be their children’s,
+and they went to pay the price of it. Not a step of ground
+was given up until it was soaked in blood, but at the last the
+army of Manetheren was driven back, back to here, to this
+place you now call Emond’s Field. And here the Trolloc
+hordes surrounded them.”
+Her voice held the sound of cold tears. “Trolloc dead and
+the corpses of human renegades piled up in mounds, but
+always more scrambled over those charnel heaps in waves
+of death that had no end. There could be but one ﬁnish. No
+man or woman who had stood beneath the banner of the
+Red Eagle at that day’s dawning still lived when night fell.
+The sword that could not be broken was shattered.
+“In the Mountains of Mist, alone in the emptied city of
+Manetheren, Eldrene felt Aemon die, and her heart died with
+him. And where her heart had been was left only a thirst for
 
 ---
 
 Document 13
-Chapter Number: 15
-Chapter Name: Strangers and Friends
-Page Number: 272
+Chapter Number: 12
+Chapter Name: Across the Taren
+Page Number: 211
 
 Content:
-was glad he had learned a little caution. “So they didn’t get
-him. I wonder why he left Emond’s Field, without a word like
-that? Probably started running then, too, and didn’t stop
-until he got here. But why was he running just now?”
-Rand shook his head and wished he had not. It felt as
-though it might fall oﬀ. “I don’t know, except that he’s afraid
-of M . . . Mistress Alys.” All this watching what you said was
-not easy. “He doesn’t want her to know he’s here. He made
-me promise I wouldn’t tell her.”
-“Well, his secret is safe with me,” Mat said. “I wish she
-didn’t know where I was, either.”
-“Mat?” People still streamed by without paying them
-any heed, but Rand lowered his voice anyway, and leaned
-closer. “Mat, did you have a nightmare last night? About a
-man who killed a rat?”
-Mat stared at him without blinking. “You, too?” he said
-ﬁnally. “And Perrin, I suppose. I almost asked him this
-morning, but. . . . He must have. Blood and ashes! Now
-somebody’s making us dream things. Rand, Iwish nobody
-knew where I was.”
-“There were dead rats all over the inn this morning.” He
-did not feel as afraid at saying it as he would have earlier.
-He did not feel much of anything. “Their backs were
-broken.” His voice rang in his own ears. If he was getting
-sick, he might have to go to Moiraine. He was surprised that
-even the thought of the One Power being used on him did
-not bother him.
-Mat took a deep breath, hitching his cloak, and looked
-around as if searching for somewhere to go. “What’s
+all. The roof of tree trunks and branches came too low to allow
+any but the women to stand. Smoke from a small ﬁre on a bed of
+river stones drifted up and through; the draft was enough to
+keep the space free of smoke, but the interweaving was too thick
+to let out even a glimmer of the ﬂames. Moiraine and Egwene,
+their cloaks thrown aside, sat cross-legged, facing one another
+beside the ﬁre.
+“The One Power,” Moiraine was saying, “comes from the True
+Source, the driving force of Creation, the force the Creator made
+to turn the Wheel of Time.” She put her hands together in front
+of her and pushed them against each other. “Saidin, the male
+half of the True Source, and saidar, the female half, work against
+each other and at the same time together to provide that force.
+Saidin”—she lifted one hand, then let it drop—“is fouled by the
 
 ---
 
 Document 14
-Chapter Number: 1
-Chapter Name: An Empty Road
-Page Number: 34
+Chapter Number: 7
+Chapter Name: Out of the Woods
+Page Number: 125
 
 Content:
-him. Dav thinks he’s down from Taren Ferry—a sheepstealer,
-or a chickenthief. A chickenthief!” He lapsed into aﬀronted
-silence.
-“It’s probably all foolishness anyway,” Rand said ﬁnally.
-“Maybe he is just a sheepstealer.” He tried to picture it, but
-it was like picturing a wolf taking the cat’s place in front of a
-mouse hole.
-“Well, I didn’t like the way he looked at me. And neither
-did you, not if how you jumped at me is any guide. We
-ought to tell someone.”
+“All the stories are real,” he muttered.
+“So it seems, lad,” the blacksmith said. “So it seems.”
+Rand only half heard. He was concentrating on following
+Egwene’s slender shape. He had pulled himself together just
+enough to wish she would hurry, though in truth she was
+keeping her pace to what the two men could manage with
+their burden. She led them halfway down the Green, to the
+Calder house. Char blackened the edges of its thatch, and
+smut stained the whitewashed walls. Of the houses on
+either side only the foundation stones were left, and two
+piles of ash and burned timbers. One had been the house of
+Berin Thane, one of the miller’s brothers. The other had
+been Abell Cauthon’s. Mat’s father. Even the chimneys had
+toppled.
+“Wait here,” Egwene said, and gave them a look as if
+expecting an answer. When they only stood there, she
+muttered something under her breath, then dashed inside.
+“Mat,” Rand said. “Is he . . . ?”
+“He’s alive,” the blacksmith said. He set down his end of
+the litter and straightened slowly. “I saw him a little while
+ago. It’s a wonder any of us are alive. The way they came
+after my house, and the forge, you’d have thought I had
+gold and jewels in there. Alsbet cracked one’s skull with a
+frying pan. She took one look at the ashes of our house this
+morning and set out hunting around the village with the
+biggest hammer she could dig out of what’s left of the forge,
+just in case any of them hid instead of running away. I could
 
 ---
 
 Document 15
-Chapter Number: 43
-Chapter Name: Decisions and Apparitions
-Page Number: 781
+Chapter Number: 49
+Chapter Name: The Dark One Stirs
+Page Number: 867
 
 Content:
-looked like ﬂesh. It felt like ﬂesh. Light help me, I could feel
-my own hand gripping me, like I was the ﬁgure.”
-Rand was silent for a moment. “You have to keep
-denying him, Mat.”
-“I did, and he laughed. He kept talking about some
-eternal war, and saying we’d met like that a thousand times
-before, and. . . . Light, Rand, the Dark One knows me.”
-“He said the same thing to me. I don’t think he does,”
-he added slowly. “I don’t think he knows which of us. . . .”
+Shaking his head, Rand gathered his things, and gave
+his hands and face and teeth a hasty wash with the little
+water Lan allowed for such things. He wondered if women
+had a way of reading men’s minds. It was an unsettling
+thought. All women are Aes Sedai. Telling himself he was
+letting the Blight get to him, he rinsed out his mouth and
+hurried to get the bay saddled.
+It was more than a little disconcerting, having the
+campsite disappear before he reached the horses, but by
+the time his saddle girth was tight everything on the hill
+winked back into view. Everyone was hurrying.
+The seven towers stood plain in the morning light,
+distant broken stumps, like huge, rough hills that merely
+hinted at grandeur gone. The hundred lakes were a smooth,
+unruﬄed blue. Nothing broke the surface this morning.
+When he looked at the lakes and the ruined towers, he could
+almost ignore the sickly things growing around the hill. Lan
+did not seem to be avoiding looking at the towers, any more
+than he seemed to be avoiding Nynaeve, but somehow he
+never did as he concentrated on getting them ready to go.
+After the wicker panniers were fastened on the pack
+horse, after every scrap and smudge and track were gone
+and everyone else was mounted, the Aes Sedai stood in the
+middle of the hilltop with her eyes closed, not even seeming
+to breathe. Nothing happened that Rand could see, except
+that Nynaeve and Egwene shivered despite the heat and
+rubbed their arms briskly. Egwene’s hands suddenly froze on
 
 ---
 
 Document 16
-Chapter Number: 15
-Chapter Name: Strangers and Friends
-Page Number: 272
+Chapter Number: 0
+Chapter Name: prefactual
+Page Number: 6
 
 Content:
-even the thought of the One Power being used on him did
-not bother him.
-Mat took a deep breath, hitching his cloak, and looked
-around as if searching for somewhere to go. “What’s
-happening to us, Rand? What?”
-“I don’t know. I’m going to ask Thom for advice. About
-whether to tell . . . anyone else.”
-“No! Not her. Maybe him, but not her.”
-The sharpness of it took Rand by surprise. “Then you
-believed him?” He did not need to say which “him” he
-meant; the grimace on Mat’s face said he understood.
+CONTENTS
+PROLOGUE Dragonmount
+MAPS
+1 An Empty Road
+2 Strangers
+3 The Peddler
+4 The Gleeman
+5 Winternight
+6 The Westwood
+7 Out of the Woods
+8 A Place of Safety
+9 Tellings of the Wheel
+10 Leavetaking
+11 The Road to Taren Ferry
+12 Across the Taren
+13 Choices
+14 The Stag and Lion
+15 Strangers and Friends
+16 The Wisdom
+17 Watchers and Hunters
+18 The Caemlyn Road
+19 Shadow’s Waiting
+20 Dust on the Wind
+21 Listen to the Wind
+22 A Path Chosen
+23 Wolfbrother
+24 Flight Down the Arinelle
+25 The Traveling People
+26 Whitebridge
+27 Shelter From the Storm
+28 Footprints in Air
+29 Eyes Without Pity
+30 Children of Shadow
 
 ---
 
 Document 17
-Chapter Number: 8
-Chapter Name: A Place of Safety
-Page Number: 144
+Chapter Number: 9
+Chapter Name: Tellings of the Wheel
+Page Number: 164
 
 Content:
-“But you won’t leave it alone.” Rand’s words were half
-plea, half command. He was shocked to realize he had
-spoken to an Aes Sedai like that, but she seemed not to
-notice his tone.
-“I will not,” she agreed simply. “I am very tired, Rand,
-and I have had no chance to rest since last night. Ordinarily
-it would not matter, but for this kind of hurt. . . . This”—she
-took a small bundle of white silk from her pouch—“is an
-angreal.” She saw his expression. “You know of angreal,
-then. Good.”
-Unconsciously he leaned back, further away from her
-and what she held. A few stories mentioned angreal, those
-relics of the Age of Legends that Aes Sedai used to perform
-their greatest wonders. He was startled to see her unwrap a
-smooth ivory ﬁgurine, age-darkened to deep brown. No
-longer than her hand, it was a woman in ﬂowing robes, with
-long hair falling about her shoulders.
-“We have lost the making of these,” she said. “So much
-is lost, perhaps never to be found again. So few remain, the
-Amyrlin Seat almost did not allow me to take this one. It is
-well for Emond’s Field, and for your father, that she did give
-her permission. But you must not hope too much. Now, even
-with it, I can do little more than I could have without it
-yesterday, and the taint is strong. It has had time to fester.”
-“You can help him,” Rand said fervently. “I know you
-can.”
-Moiraine smiled, a bare curving of her lips. “We shall
-see.” Then she turned back to Tam. One hand she laid on his
+folded on the bedside table, and a blanket was drawn up
+under his chin. When Rand touched his father’s forehead,
+Tam opened his eyes.
+“There you are, boy. Marin said you were here, but I
+couldn’t even sit up to see. She said you were too tired for
+her to wake just so I could look at you. Even Bran can’t get
+around her when she has her mind set.”
+Tam’s voice was weak, but his gaze was clear and
+steady. The Aes Sedai was right, Rand thought. With rest he
+would be as good as ever.
+“Can I get you something to eat? Mistress al’Vere left a
+tray.”
+“She fed me already . . . if you can call it that. Wouldn’t
+let me have anything but broth. How can a man avoid bad
+dreams with nothing but broth in his. . . .” Tam fumbled a
+hand from under the cover and touched the sword at Rand’s
+waist. “Then it wasn’t a dream. When Marin told me I was
+sick, I thought I had been. . . . But you’re all right. That is all
+that matters. What of the farm?”
+Rand took a deep breath. “The Trollocs killed the sheep.
+I think they took the cow, too, and the house needs a good
+cleaning.” He managed a weak smile. “We were luckier than
+some. They burned half the village.”
+He told Tam everything that had happened, or at least
+most of it. Tam listened closely, and asked sharp questions,
+so he found himself having to tell about returning to the
+farmhouse from the woods, and that brought in the Trolloc
+he had killed. He had to tell how Nynaeve had said Tam was
+dying to explain why the Aes Sedai had tended him instead
 
 ---
 
 Document 18
-Chapter Number: 1
-Chapter Name: An Empty Road
-Page Number: 33
+Chapter Number: 4
+Chapter Name: The Gleeman
+Page Number: 78
 
 Content:
-Rand’s smile broadened; it did not sound as much like
-fun to him as it would have a year or two back, but Mat
-never seemed to grow up. He took a quick look at his father
-—the men had their heads together still, all three talking at
-once—then lowered his own voice. “I promised to unload the
-cider. I can meet you later, though.”
-Mat rolled his eyes skyward. “Toting barrels! Burn me,
-I’d rather play stones with my baby sister. Well, I know of
-better things than a badger. We have strangers in the Two
-Rivers. Last evening—”
-For an instant Rand stopped breathing. “A man on
-horseback?” he asked intently. “A man in a black cloak, on a
-black horse? And his cloak doesn’t move in the wind?”
-Mat swallowed his grin, and his voice dropped to an
-even hoarser whisper. “You saw him, too? I thought I was
-the only one. Don’t laugh, Rand, but he scared me.”
-“I’m not laughing. He scared me, too. I could swear he
-hated me, that he wanted to kill me.” Rand shivered. Until
-that day he had never thought of anyone wanting to kill
-him, really wanting to kill him. That sort of thing just did not
-happen in the Two Rivers. A ﬁstﬁght, maybe, or a wrestling
-match, but not killing.
-“I don’t know about hating, Rand, but he was scary
-enough anyway. All he did was sit on his horse looking at
-me, just outside the village, but I’ve never been so
-frightened in my life. Well, I looked away, just for a moment
-—it wasn’t easy, mind you—then when I looked back he’d
+people and strange lands, of the Green Man, of Warders and
+Trollocs, of Ogier and Aiel. The Thousand Tales of Anla, the
+Wise Counselor. ‘Jaem the Giant-Slayer.’ How Susa Tamed
+Jain Farstrider. ‘Mara and the Three Foolish Kings.’ ”
+“Tell us about Lenn,” Egwene called. “How he ﬂew to the
+moon in the belly of an eagle made of ﬁre. Tell about his
+daughter Salya walking among the stars.”
+Rand looked at her out of the corner of his eye, but she
+seemed intent on the gleeman. She had never liked stories
+about adventures and long journeys. Her favorites were
+always the funny ones, or stories about women outwitting
+people who were supposed to be smarter than everyone
+else. He was sure she had asked for tales about Lenn and
+Salya to put a burr under his shirt. Surely she could see the
+world outside was no place for Two Rivers folk. Listening to
+tales of adventures, even dreaming about them, was one
+thing; having them take place around you would be
+something else again.
+“Old stories, those,” Thom Merrilin said, and abruptly he
+was juggling three colored balls with each hand. “Stories
+from the Age before the Age of Legends, some say. Perhaps
+even older. But I have all stories, mind you now, of Ages that
+were and will be. Ages when men ruled the heavens and the
+stars, and Ages when man roamed as brother to the
+animals. Ages of wonder, and Ages of horror. Ages ended by
+ﬁre raining from the skies, and Ages doomed by snow and
+ice covering land and sea. I have all stories, and I will tell all
 
 ---
 
 Document 19
-Chapter Number: 1
-Chapter Name: An Empty Road
-Page Number: 36
+Chapter Number: 23
+Chapter Name: Wolfbrother
+Page Number: 413
 
 Content:
-Rand startled himself by laughing out loud, a laugh of
-pure relief. The menacing black-clad rider as a gleeman was
-a ridiculous notion, but. . . . He clapped a hand over his
-mouth in embarrassment.
-“You see, Tam,” Bran said. “There’s been little enough
-laughter in this village since winter came. Now even the
-gleeman’s cloak brings a laugh. That alone is worth the
-expense of bringing him down from Baerlon.”
-“Say what you will,” Cenn spoke up suddenly. “I still say
-it’s a foolish waste of money. And those ﬁreworks you all
-insisted on sending oﬀ for.”
+He shifted uncomfortably.
+“You say you’re going to Caemlyn,” Elyas said, “but that
+still doesn’t explain what you’re doing out here, days from
+anywhere.” He tossed back his fur-patch cloak and lay down
+on his side, propped on one elbow and waiting expectantly.
+Perrin glanced at Egwene. Early on they had concocted
+a story for when they found people, to explain where they
+were going without bringing them any trouble. Without
+letting anyone know where they were really from, or where
+they were really going, eventually. Who knew what careless
+word might reach a Fade’s ear? They had worked on it every
+day, patching it together, honing out ﬂaws. And they had
+decided Egwene was the one to tell it. She was better with
+words than he was, and she claimed she could always tell
+when he was lying by his face.
+Egwene began at once, smoothly. They were from the
+north, from Saldaea, from farms outside a tiny village.
+Neither of them had been more than twenty miles from
+home in their whole lives before this. But they had heard
+gleemen’s stories, and merchants’ tales, and they wanted to
+see some of the world. Caemlyn, and Illian. The Sea of
+Storms, and maybe even the fabled islands of the Sea Folk.
+Perrin listened with satisfaction. Not even Thom Merrilin
+could have made a better tale from the little they knew of
+the world outside the Two Rivers, or one better suited to
+their needs.
+“From Saldaea, eh?” Elyas said when she was done.
+Perrin nodded. “That’s right. We thought about seeing
 
 ---
 
 Document 20
-Chapter Number: 32
-Chapter Name: Four Kings in Shadow
-Page Number: 573
+Chapter Number: 53
+Chapter Name: The Wheel Turns
+Page Number: 969
 
 Content:
-as before.
-One good thing, at least, Rand thought. If he believes I
-can live up to the heron-mark, maybe he’ll leave us alone.
-Then all we have to worry about is Hake and his bullies. It
-was hardly a comforting thought, and, sword or no sword,
-Gode kept watching. And smiling.
-To Rand the night seemed to last a year. All those eyes
-looking at him: Hake and Jak and Strom like vultures
-watching a sheep caught in a bog, Gode waiting like
-something even worse. He began to think that everybody in
-the room was watching with some hidden motive. Sour wine
-fumes and the stench of dirty, sweating bodies made his
+Table of Contents
+Cover Page
+Title Page
+Copyright Page
+Table of Contents
+PROLOGUE Dragonmount
+MAPS
+1 An Empty Road
+2 Strangers
+3 The Peddler
+4 The Gleeman
+5 Winternight
+6 The Westwood
+7 Out of the Woods
+8 A Place of Safety
+9 Tellings of the Wheel
+10 Leavetaking
+11 The Road to Taren Ferry
+12 Across the Taren
+13 Choices
+14 The Stag and Lion
+15 Strangers and Friends
+16 The Wisdom
+17 Watchers and Hunters
+18 The Caemlyn Road
+19 Shadow’s Waiting
+20 Dust on the Wind
+21 Listen to the Wind
+22 A Path Chosen
+23 Wolfbrother
+24 Flight Down the Arinelle
+25 The Traveling People
+26 Whitebridge
 
 QUERY - 
 
-who is rand al thor?
+Summarise chapter 10 and explain how is chapter 10 related to chapter 9

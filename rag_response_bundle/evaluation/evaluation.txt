@@ -1,31 +1,33 @@
 
-User Query - who is rand al thor?
+        User Query - Summarise chapter 10 and explain how is chapter 10 related to chapter 9
 
-AI Response - Rand al’Thor is a central character in the story, often referred to as “the sheepherder” or “the ta’veren,” a person fated by the Wheel of Time. He is the son of Tam al’Thor and is from the Two Rivers, though he is not born there. He is often seen as a hero, though he questions whether he truly is one. He is haunted by visions and encounters with dark forces, including the Dark One’s servant Ba’alzamon. He is also known for his strong sense of justice and his deep bond with his friends, especially Mat and Perrin. Rand is sometimes misunderstood or feared, as seen when people mistake him for a monster or a threat. He is also recognized for his courage, even when he doubts himself. His journey involves facing danger, protecting others, and trying to understand his role in a larger, often terrifying, destiny.
+        AI Response - Chapter 10, “Leavetaking,” depicts Rand, Mat, and the Warder Lan entering a dimly lit stable where Perrin is waiting. Lan urgently checks horses—two familiar ones plus others from the Two Rivers—while warning Perrin to stay alert. The mood is tense; Lan’s quick inspection suggests they’re fleeing or preparing for danger. They’re moving quickly, as Lan mutters, “Hurry, she says,” implying someone (likely Moiraine) is urging haste.
 
-Answer Relevance - 
+Chapter 9, “Tellings of the Wheel,” ends with Rand running through barren, hostile terrain pursued by Trollocs. He’s physically exhausted, hearing their howls behind him, and the chapter closes with him scrambling up a ridge. 
 
- ```json
+The connection? Chapter 10 follows directly after Chapter 9’s climax. Rand’s escape from the Trollocs leads him into the next phase: leaving the Two Rivers behind, gathering allies, and preparing for a larger journey. Chapter 10 shows the group’s transition from evasion to organized departure—with horses packed, tensions high, and urgency in motion—mirroring Rand’s desperate flight in Chapter 9. It’s the shift from survival to purposeful movement toward an unknown future.
+
+        Answer Relevance - 
+
+        ```json
 {
-  "score": 5,
-  "Explanation": "The response provides a comprehensive and accurate description of Rand al'Thor, addressing his background, characteristics, and role in the story. It does not contain any significant hallucinations or irrelevant information."
+  "score": 4,
+  "Explanation": "The response effectively summarizes Chapter 10 and provides a clear connection between Chapters 9 and 10. It captures the essence of both chapters and explains how Chapter 10 builds upon the events of Chapter 9, showing a logical progression from survival to organized departure. However, it does not include specific details about the content of Chapter 10 that might have been more relevant to the query."
 }
 ```
 
- Groundness - 
+        Groundness - 
 
- ```json
+        Here's the evaluation based on the provided RAG RESPONSE and CONTEXT:
+
+**Score:** 4  
+**Explanation:** The RAG RESPONSE aligns well with the CONTEXT provided, accurately depicting the scenes from Chapters 9 and 10. However, there are minor inaccuracies and additional details not supported by the CONTEXT. For example, the RAG RESPONSE mentions "Chapter 9 ends with Rand running through barren, hostile terrain," which is accurate, but it adds "pursued by Trollocs" and describes the terrain in more detail than the CONTEXT does. Additionally, the RAG RESPONSE includes a speculative connection between the chapters ("Chapter 10 follows directly after Chapter 9’s climax") that isn't explicitly stated in the CONTEXT. These minor discrepancies slightly reduce the score from a perfect 5 but still maintain a strong alignment with the provided documents.
+
+        Retrieval Relevance - 
+
+        ```json
 {
-  "score": 4,
-  "Explanation": "The RAG RESPONSE covers a significant amount of information about Rand al'Thor that aligns with the provided CONTEXT. However, there are a few points in the response that are not directly supported by the given documents. For example, the response mentions Rand's bond with his friends Mat and Perrin, which is not explicitly detailed in the provided context. Additionally, while the response correctly identifies Rand as the son of Tam al'Thor and from the Two Rivers, it does not specify that he was not born there, which is a detail present in the context. The response also includes a broader characterization of Rand's role and his interactions with dark forces, which are generally supported by the context but not always directly quoted. Overall, the response is quite grounded in the context, but it includes some generalizations and inferences that slightly reduce its score."
-}
-```
-
- Retrieval Relevance - 
-
- ```json
-{
-  "score": 4,
-  "Explanation": "The retrieved context provides a significant amount of information related to 'Rand al'Thor', including his interactions with various characters, his experiences, and his role in the story. However, the context includes multiple documents that sometimes provide overlapping information, and not all details are directly relevant to answering a straightforward query about who Rand al'Thor is. Nonetheless, the majority of the content is pertinent and useful for understanding Rand al'Thor's character and his role in the narrative."
+  "score": 3,
+  "Explanation": "The provided context mainly consists of excerpts from Chapter 10 ('Leavetaking') and Chapter 9 ('Tellings of the Wheel'). While it does provide content from both chapters, it lacks a direct comparison or explanation of how Chapter 10 relates to Chapter 9. Therefore, about 70% of the context is relevant to answering the query, as it provides details from both chapters but fails to connect them."
 }
 ```
