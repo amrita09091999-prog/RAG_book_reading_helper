@@ -48,7 +48,7 @@ class RAG:
                 json.dump(rag_response,f)
     
     def chunk_novel(self,doc_pdf):
-        loader = PyPDFLoader(f"/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/uploaded_pdf/{doc_pdf}")
+        loader = PyPDFLoader(doc_pdf)
         documents = loader.load()
         text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=1500,       
