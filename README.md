@@ -4,7 +4,7 @@ A Retrieval-Augmented Generation (RAG) system for question answering on novels, 
 
 🔍**Overview**
 
-Book_QA_RAG is an end-to-end Retrieval-Augmented Generation (RAG) system built to help avid readers recall characters, events, and contextual details while reading long novels.
+AI Reading Assitant is an end-to-end Retrieval-Augmented Generation (RAG) system built to help avid readers recall characters, events, and contextual details while reading long novels.
 Readers often lose track of information across chapters. This system allows users to upload a book (PDF) and ask natural-language questions, receiving:
 
 Context-grounded answers
