@@ -1,33 +1,29 @@
 
-        User Query - Summarise chapter 10 and explain how is chapter 10 related to chapter 9
+        User Query - How is Saidar different from Saidin?
 
-        AI Response - Chapter 10, “Leavetaking,” depicts Rand, Mat, and the Warder Lan entering a dimly lit stable where Perrin is waiting. Lan urgently checks horses—two familiar ones plus others from the Two Rivers—while warning Perrin to stay alert. The mood is tense; Lan’s quick inspection suggests they’re fleeing or preparing for danger. They’re moving quickly, as Lan mutters, “Hurry, she says,” implying someone (likely Moiraine) is urging haste.
-
-Chapter 9, “Tellings of the Wheel,” ends with Rand running through barren, hostile terrain pursued by Trollocs. He’s physically exhausted, hearing their howls behind him, and the chapter closes with him scrambling up a ridge. 
-
-The connection? Chapter 10 follows directly after Chapter 9’s climax. Rand’s escape from the Trollocs leads him into the next phase: leaving the Two Rivers behind, gathering allies, and preparing for a larger journey. Chapter 10 shows the group’s transition from evasion to organized departure—with horses packed, tensions high, and urgency in motion—mirroring Rand’s desperate flight in Chapter 9. It’s the shift from survival to purposeful movement toward an unknown future.
+        AI Response - Saidar and Saidin are the male and female halves of the True Source, respectively. Saidin can only be drawn by men, while Saidar is accessible only to women. They work together yet also oppose each other, forming the One Power. Since the Time of Madness, Saidin has been tainted by the Dark One’s touch, making it impure. Saidar remains untainted but equally powerful. Both halves must be balanced for the Wheel of Time to turn properly. The context does not specify any additional differences beyond gender-based access and Saidin’s contamination.
 
         Answer Relevance - 
 
         ```json
 {
   "score": 4,
-  "Explanation": "The response effectively summarizes Chapter 10 and provides a clear connection between Chapters 9 and 10. It captures the essence of both chapters and explains how Chapter 10 builds upon the events of Chapter 9, showing a logical progression from survival to organized departure. However, it does not include specific details about the content of Chapter 10 that might have been more relevant to the query."
+  "Explanation": "The response accurately describes the key differences between Saidar and Saidin, including their gender-based accessibility and the contamination of Saidin. It provides relevant details without significant hallucinations or irrelevant information."
 }
 ```
 
         Groundness - 
 
-        Here's the evaluation based on the provided RAG RESPONSE and CONTEXT:
-
-**Score:** 4  
-**Explanation:** The RAG RESPONSE aligns well with the CONTEXT provided, accurately depicting the scenes from Chapters 9 and 10. However, there are minor inaccuracies and additional details not supported by the CONTEXT. For example, the RAG RESPONSE mentions "Chapter 9 ends with Rand running through barren, hostile terrain," which is accurate, but it adds "pursued by Trollocs" and describes the terrain in more detail than the CONTEXT does. Additionally, the RAG RESPONSE includes a speculative connection between the chapters ("Chapter 10 follows directly after Chapter 9’s climax") that isn't explicitly stated in the CONTEXT. These minor discrepancies slightly reduce the score from a perfect 5 but still maintain a strong alignment with the provided documents.
+        ```json
+{
+  "score": 4,
+  "Explanation": "The RAG RESPONSE accurately reflects the information provided in the CONTEXT regarding Saidar and Saidin, including their gender-based accessibility and the contamination of Saidin. However, the response includes a statement about the necessity of balancing both halves for the Wheel of Time to turn properly, which is not explicitly mentioned in the given context. Additionally, the response does not include any information from other documents that were irrelevant to the specific topic discussed but were part of the CONTEXT. Therefore, the response is well-grounded in the provided context, achieving around 85% accuracy in grounding with the facts presented."
+}
+```
 
         Retrieval Relevance - 
 
-        ```json
-{
-  "score": 3,
-  "Explanation": "The provided context mainly consists of excerpts from Chapter 10 ('Leavetaking') and Chapter 9 ('Tellings of the Wheel'). While it does provide content from both chapters, it lacks a direct comparison or explanation of how Chapter 10 relates to Chapter 9. Therefore, about 70% of the context is relevant to answering the query, as it provides details from both chapters but fails to connect them."
+        {
+  "score": 2,
+  "Explanation": "The provided context does not directly address the differences between Saidar and Saidin. While the context mentions both Saidar and Saidin, it does not provide specific details on how they differ from each other. Most of the documents are unrelated to the query and contain information about characters, events, and places that do not contribute to answering the question about the differences between Saidar and Saidin."
 }
-```

@@ -186,6 +186,7 @@ class RAG:
 
         with open("/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/RAG_clean/rag_response_bundle/rag_response.json",'w') as f:
             json.dump(rag_response,f)
+        print("RAG - Response")
 
 
 

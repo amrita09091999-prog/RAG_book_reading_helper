@@ -8,3 +8,7 @@ pypdf
 python-dotenv
 pickle
 rank_bm25
+fastapi
+uvicorn
+pandas 
+python-multipart

@@ -10,6 +10,7 @@ class RAGOrchestration:
         filename = Path(self.doc_pdf).name.replace(".pdf","")
         self.bookname = filename   
         self.rag = RAG(self.bookname)
+
     def get_llm_response(self):
         try:
 
@@ -49,13 +50,13 @@ class RAGOrchestration:
             print(f"Error in pipeline - {e}")
             traceback.print_exc()
 
-input_json = {
-    'doc_pdf':'/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/uploaded_pdf/Wheel Of Time - 1The Eye Of The World - PDF Room.pdf',
-    'query':'Summarise chapter 10 and explain how is chapter 10 related to chapter 9'
-}
+# input_json = {
+#     'doc_pdf':'/Users/amritamandal/Desktop/Python/Projects/Novel_Reading_Assistant/RAG_book_reading_helper-1/uploaded_pdf/Wheel Of Time - 1The Eye Of The World - PDF Room.pdf',
+#     'query':'Summarise chapter 10 and explain how is chapter 10 related to chapter 9'
+# }
 
-orchestra = RAGOrchestration(input_json)
-#orchestra.get_llm_response()
-orchestra.create_evaluation()
+# orchestra = RAGOrchestration(input_json)
+# #orchestra.get_llm_response()
+# orchestra.create_evaluation()
 
         
